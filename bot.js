@@ -50,7 +50,7 @@ if (command == "embed") {
 });
 
 client.on("ready", () => {
-let channel =     client.channels.get("511953071363063811")
+let channel =     client.channels.get("531565085974593536")
 setInterval(function() {
 channel.send(`**spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam spam**`);
 }, 25)
