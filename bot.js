@@ -1,14 +1,16 @@
  const Discord = require('discord.js');
 const client = new Discord.Client();
-console.log("Scrpit By King_Power");
 
+client.on('ready', () => {
+  console.log(Logged in as ${client.user.tag}!);  
+});
 
-client.on("ready", () => {
-let channel =     client.channels.get("592756954842136643")
-setInterval(function() {
-channel.send(`spam spam spam`);
-}, 25)
+client.on('ready', async() => {
+var server = "592756954842136643"; // ايدي السررفر
+var channel = "592756954854719586";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('Superspam , Superspam , Superspam , Superspam, Magic   , ')
+    },400);
 })
- 
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
