@@ -11,6 +11,6 @@ var channel = "592756954854719586";//ايدي الروم
     setInterval(()=>{
     client.guilds.get(server).channels.get(channel).send('Superspam , Superspam , Superspam , Superspam, Magic   , ')
     },400);
-})
+});
 
 client.login(process.env.BOT_TOKEN);
